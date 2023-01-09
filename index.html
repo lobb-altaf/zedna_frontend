@@ -6,14 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Default Starter</title> 
     
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/style.css" />
 </head>
   <body>
-    
-  <nav class="navbar navbar-expand-lg nav-cover">
+   
+    <div class="navbar-header" style="  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+">
+        <nav class="navbar navbar-expand-lg nav-cover">
         <div class="container-fluid">
             <div>
                 <a class="navbar-brand" href="#">
@@ -22,7 +33,8 @@
             </div>
           <button style=" color: rgba(0,0,0,.5);
           border-color: rgba(0,0,0,.1);" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span style=" color: rgba(0,0,0,.5);" class="navbar-toggler-icon"></span>
+            <!-- <span style=" color: rgba(0,0,0,.5);" class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-bars"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -66,18 +78,20 @@
       </nav>
     
           
+    </div>
+
 
     <!-- -------------------------header-------------------------- -->
       <div class="conatiner header">
-        <div style="padding: 25px;">
+        <div style="padding: 25px;margin-top: 130px;">
             <img src="images/svgs/header_logo.svg" alt="computer" />
         </div>
 
       <div class="container-fluid shape-img-cover">
           <div class="row">
-             <div class="col-md-6">
+             <div class="col-md-6 flex">
                <img  src="images/svgs/first.svg" alt="">
-               <img style="position: relative;right: 7px;" src="images/svgs/second.svg" alt="">
+               <img style="position: relative;right: 3px;" src="images/svgs/second.svg" alt="">
              </div>
        
              <div class="col-md-6 flex">
@@ -120,13 +134,15 @@
               <p class="features-text">Share E-invoices with Zatka</p>
             </div>
             <div class="col-md-3 features-cover">
-              <i class="fa fa-clock-o features-icon" aria-hidden="true"></i>
+           <i class="far fa-clock features-icon"></i>
+          
               <p class="features-text">Prepare for the second phases
                 - January 2030-
               Connectivity and Integration</p>
             </div>
             <div class="col-md-3 features-cover">
               <i class="fa fa-print  features-icon" aria-hidden="true"></i>
+
               <p class="features-text">Issuing E-invoices
                 In XML & PDF/A-3 format</p>
             </div>
@@ -143,7 +159,8 @@
               <p class="features-text">Provide a cloud technology solution</p>
             </div>
             <div class="col-md-3 features-cover">
-              <i class="fa fa-file-archive-o features-icon" aria-hidden="true"></i>
+            
+              <i class="fas fa-door-open features-icon"></i>
               <p class="features-text">Create an encryption function (hash)
                 Cryptographic Stamp
                 QR Code
@@ -170,7 +187,7 @@
   <div class="package-title-cover">
     <p class="package-title">Our services</span></p>
   </div>
-  <div class="row">
+  <div class="row" >
     <div class="col-md-4">
       <div class="service-cart-cover clearfix">
         <p class="package-cart-title">Jahez  program</p>
@@ -217,14 +234,13 @@
   </div>
 </div>
 
-
 <!-- ----------------------License prices for software and technical services-------------------- -->
 
   <div class="container-fluid shape-img-cover">
       <div class="row">
-         <div class="col-md-6">
+         <div class="col-md-6 flex">
            <img  src="images/svgs/first.svg" alt="">
-           <img style="position: relative;right: 7px;" src="images/svgs/second.svg" alt="">
+           <img style="position: relative;right: 3px;" src="images/svgs/second.svg" alt="">
          </div>
    
          <div class="col-md-6 flex">
@@ -239,69 +255,71 @@
         <p class="license-title">License prices for software </br>
          and technical services</p>
       </div>
-      <div class="row" style="gap:60px;">
-        <div class="col-md-4 license-col">
-          <div class="license-div-header">
-            <p>Jahez programme</p>
-          </div>
-          <div class="license-div-text">
-            <ul style="list-style-type: circle;">
-              <li>Licenses to use Jahez program for one year</li>
-              <li>Technical Support</li>
-          
-            </ul>
-            <p style="padding: 22px;">1200 SAR/Year</p>
-          </div>
-          <div class="license-div-button-warpper" style="margin-top: 15px;">
-            <button class="license-div-button">Add to cart</button>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="license-col">
+            <div class="license-div-header">
+              <p>Jahez programme</p>
+            </div>
+            <div class="license-div-text">
+              <ul class="license-ul">
+                <li>Licenses to use Jahez program for one year</li>
+                <li>Technical Support</li>
+              </ul>
+              <p style="padding: 22px;">1200 SAR/Year</p>
+            </div>
+            <div class="license-div-button-warpper" style="margin-top: 15px;">
+              <button class="license-div-button">Add to cart</button>
+            </div>
           </div>
         </div>
 
-        <div class="col-md-4 license-col">
-          <div class="license-div-header">
-            <p>Rabit program</p>
-          </div>
-          <div class="license-div-text">
-            <ul style=" list-style-type: circle;">
-              <li>Licenses to use the Rabit program for one year</li>
-              <li>Technical Support</li>
-            </ul>
-          </div>
-          <div class="license-div-button-warpper"  style="margin-top: 70px;">
-            <button class="license-div-button">Call us</button>
+        <div class="col-md-4">
+          <div class="license-col">
+            <div class="license-div-header">
+              <p>Rabit program</p>
+            </div>
+            <div class="license-div-text">
+              <ul class="license-ul">
+                <li>Licenses to use the Rabit program for one year</li>
+                <li>Technical Support</li>
+              </ul>
+            </div>
+            <div class="license-div-button-warpper"  style="margin-top: 110px;">
+              <button class="license-div-button">Call us</button>
+            </div>
           </div>
         </div>
 
         
-        <div class="col-md-4 license-col">
-          <div class="license-div-header">
-            <p>Technical services</p>
-          </div>
-          <div class="license-div-text">
-            <ul style=" list-style-type: circle;">
-              <li>Specialized technical support for the Rabit program</li>
-              <li>(Training - Preparing - Consulting)</li>
-              <li>Technical Support</li>
-            </ul>
-          </div>
-          <div class="license-div-button-warpper">
-            <button class="license-div-button">Call us</button>
+        <div class="col-md-4">
+          <div class="license-col">
+            <div class="license-div-header">
+              <p>Technical services</p>
+            </div>
+            <div class="license-div-text">
+              <ul class="license-ul">
+                <li>Specialized technical support for the Rabit program</li>
+                <li>(Training - Preparing - Consulting)</li>
+                <li>Technical Support</li>
+              </ul>
+            </div>
+            <div class="license-div-button-warpper">
+              <button class="license-div-button">Call us</button>
+            </div>
           </div>
         </div>
-    
+
       </div>
     </div>
       
-   
-
-
     <!-- ------------------ Package prices------------------------------ -->
     <div class="container">
       <div class="package-title-cover">
         <p class="package-title">Package prices <span class="package-title-span">(All prices include tax)</span></p>
       </div>
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 package-item-cover">
           <p class="package-cart-title">Bronze</p>
           <div class="package-cart-cover clearfix">
             <p class="package-cart-text">250 invoice </p>
@@ -314,7 +332,7 @@
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3 package-item-cover">
           <p class="package-cart-title">Silver</p>
           <div class="package-cart-cover clearfix">
             <p class="package-cart-text">100 invoice </p>
@@ -327,7 +345,7 @@
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3 package-item-cover">
           <p class="package-cart-title">Golden</p>
           <div class="package-cart-cover clearfix">
             <p class="package-cart-text">3000 invoice </p>
@@ -340,7 +358,7 @@
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3 package-item-cover">
           <p class="package-cart-title">Diamond</p>
           <div class="package-cart-cover clearfix">
             <p class="package-cart-text">5000 invoice </p>
@@ -359,9 +377,9 @@
     <!-- ----------------zedna goals-------------- -->
   <div class="container-fluid shape-img-cover">
    <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 flex">
         <img  src="images/svgs/first.svg" alt="">
-        <img style="position: relative;right: 7px;" src="images/svgs/second.svg" alt="">
+        <img style="position: relative;right: 3px;" src="images/svgs/second.svg" alt="">
       </div>
 
       <div class="col-md-6 flex">
@@ -370,8 +388,6 @@
     </div>
    </div>
   </div>
-
-
 
 <div class="container">
   <div class="row" style="position: relative; bottom:30px;">
