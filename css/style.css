@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
 html {
   font-size: 100%;
 } /*16px*/
@@ -38,7 +38,7 @@ ul {
 }
 /* buttons */
 
-.btn {
+/* .btn {
   cursor: pointer;
   color: var(--white);
   background: var(--primary-500);
@@ -65,7 +65,7 @@ ul {
 }
 .btn-block {
   width: 100%;
-}
+} */
 
 /* alerts */
 .alert {
@@ -134,29 +134,14 @@ ul {
   }
 }
 
-.loading {
-  width: 6rem;
-  height: 6rem;
-  border: 5px solid var(--grey-400);
-  border-radius: 50%;
-  border-top-color: var(--primary-500);
-  animation: spinner 0.6s linear infinite;
-}
-.loading {
-  margin: 0 auto;
-}
-/* title */
 
-.title {
-  text-align: center;
-}
-
-.title-underline {
-  background: var(--primary-500);
-  width: 7rem;
-  height: 0.25rem;
-  margin: 0 auto;
-  margin-top: -1rem;
+-----------------------------navbar-------------------------------
+.navbar-header{
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+z-index: 1030;
 }
 
 .nav-logo{
@@ -167,8 +152,8 @@ margin-right: 50px;
 margin-top: 12px;
 }
 nav{
-    background: #FFFFFF;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .nav-link{
@@ -201,7 +186,6 @@ text-align: center;
 .header-text{
   font-size: 24px;
   text-align: center;
- 
 }
 .header-svg{
     width: 519px;
@@ -467,7 +451,7 @@ font-weight: bold;
   padding-top: 66px;
 }
 .footer-second-layer-text{
-  font-family: Lato;
+font-family: 'Lato', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
@@ -477,7 +461,7 @@ color: #FFFFFF;
 }
 
 .footer-second-layer-ul li a{
-  font-family:Lato ;
+  font-family: 'Lato', sans-serif;
   font-style: medium;
   font-size: 18px;
   line-height: 31px;
@@ -485,7 +469,7 @@ color: #FFFFFF;
 }
 
 .footer-ul-title{
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: SemiBold;
   font-size: 21px;
   line-height: 25px;
@@ -507,3 +491,122 @@ color: #FFFFFF;
   font-size: 24px;
   color: #ffff;
 }
+
+
+
+/* 
+--------------------------signin page----------------------------------------- */
+.signin-title{
+
+  margin-bottom: 30px; 
+  font-family: 'Tajawal';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 43px;
+display: flex;
+align-items: center;
+background: linear-gradient(180deg, #6174B9 29.69%, #764BA2 60.42%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+.signin-text{
+  display: flex;
+  justify-content: space-between;
+}
+.signin-text p {
+  font-family: Tajawal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+.input-box{
+  border-radius:20px; 
+  margin-bottom: 30px;
+  height: 61px;
+  border: 3px solid  #667EEA;
+}
+input::placeholder {
+  color: #828282;
+  font-family: Tajawal;
+  font-style: Regular;
+  font-size: 20px;
+
+}
+.signin-button{
+  background: linear-gradient(70.91deg, #BA77FF 0%, #6380FF 100%);
+  box-shadow: 0px 4px 4px rgba(14, 53, 191, 0.25);
+  border-radius: 12px;
+  width: 100%;
+  color: #ffff;
+  /* height: 38px; */
+  font-size: 20px;
+}
+
+.single-button{ 
+  background: linear-gradient(70.91deg, #BA77FF 0%, #6380FF 100%);
+  box-shadow: 0px 4px 4px rgba(14, 53, 191, 0.25);
+  border-radius: 12px;
+  width: 40%;
+  color: #ffff;
+  /* height: 38px; */
+  font-size: 20px;
+}
+.single-button-outline{
+  box-shadow: 0px 4px 4px rgba(14, 53, 191, 0.25);
+  border-radius: 12px;
+  width: 40%;
+  color: #6380FF;
+  /* height: 38px; */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* --------------------------------enter otp ------------------------------ */
+.otp-text p {
+  font-family: 'Tajawal';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+
+color:#828282;
+
+}
+.single-otp-button{ 
+  background: linear-gradient(70.91deg, #BA77FF 0%, #6380FF 100%);
+  box-shadow: 0px 4px 4px rgba(14, 53, 191, 0.25);
+  border-radius: 12px;
+  width: 60%;
+  color: #ffff;
+  /* height: 38px; */
+  font-size: 20px;
+}
+.single-otp-button-outline{
+  box-shadow: 0px 4px 4px rgba(14, 53, 191, 0.25);
+  border-radius: 12px;
+  width: 30%;
+  color: #6380FF;
+  /* height: 38px; */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* ------------------------profile page-------------------------------------------- */
+
+.profile-input-box{
+  margin-bottom: 20px;
+  height: 44px;
+  border: 1px solid #B2BCCA;
+  border-radius: 8px;
+}
+.profile-input-box::placeholder {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+} 
