@@ -105,7 +105,25 @@ ul {
 }
 
 
------------------------------navbar-------------------------------
+/* -----------------------------navbar------------------------------- */
+.dropdown-border{
+  border-bottom: 1px solid #E0E0E0;
+}
+.dropdown-toggle::after { 
+  content: none;
+}
+.dropdown-item{
+font-family: 'Tajawal';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+letter-spacing: 0.01em;
+/* Primary */
+color: #5B3795;
+}
+
 .navbar-header{
 position: fixed;
 top: 0;
@@ -114,12 +132,12 @@ left: 0;
 z-index: 1030;
 }
 
-.nav-logo{
+.nav-logo-ar{
 width: 124px;
 height: 58px;
 margin-left: 50px;
 margin-right: 50px;
-margin-top: 12px;
+margin-bottom: 20px;
 }
 nav{
   background: #FFFFFF;
@@ -143,7 +161,7 @@ nav{
 }
 .header-title{
 font-family: Tajawal;
-background: linear-gradient(to right, #667EEA 0%, #764BA2 100%);
+background: radial-gradient(50% 143.54% at 50% 50%, #7C8AC6 10.94%, rgba(118, 75, 162, 0.84) 66.67%) ;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 font-weight: bold;
@@ -156,6 +174,12 @@ text-align: center;
 .header-text{
   font-size: 24px;
   text-align: center;
+
+  background: linear-gradient(70.91deg, #764BA2 36.98%, #667EEA 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
 }
 .header-svg{
     width: 519px;
@@ -176,17 +200,13 @@ text-align: center;
 }
 .features-title{
 font-family: Tajawal;
-background: linear-gradient(to right, #667EEA 0%, #764BA2 100%);
+background: linear-gradient(70.91deg, #667EEA 0%, #764BA2 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-
 font-size:63px;
 letter-spacing: 1%;
 text-align: center;
 font-weight: bold;
-
-/* margin-top: 70px;
-  margin-bottom: 70px; */
   margin-top: 120px;
   margin-bottom: 120px;
 }
@@ -197,9 +217,16 @@ font-weight: bold;
   line-height: 22px;
   text-align: center;
   margin-top: 13px; 
+  background: linear-gradient(70.91deg, #764BA2 40.94%, #667EEA 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+text-shadow: 0px 4px 4px rgba(102, 51, 127, 0.2);
 }
 .features-cover{
   text-align: center;
+  margin-bottom: 15px;
 }
 .features-icon{
   font-size: 52px;
@@ -212,6 +239,12 @@ font-weight: bold;
     font-size: 32px;
     text-align: center;
     padding: 20px;
+
+    background: linear-gradient(70.91deg, #764BA2 0%, #667EEA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 
 .service-cart-cover-ar{
@@ -224,6 +257,9 @@ font-weight: bold;
   padding-top: 15px;
   margin-top: 10px;
 }
+.service-cart-ul-ar{
+  margin-right: 45px;
+}
 .service-cart-text-ar{
   font-family: 'Tajawal';
   font-weight:medium;
@@ -231,11 +267,16 @@ font-weight: bold;
   /* line-height: 34px; */
   text-align: right; 
   padding-top: 15px;
+  background: linear-gradient(70.91deg, #764BA2 0%, #667EEA 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
 }
 
 .service-cart-text-ar::before {
   /* content: "•";  */
-  color: #764BA2;
+  color: #667EEA; 
   display: inline-block;
   width: 1em;
   margin-right: -1em; 
@@ -245,18 +286,19 @@ font-weight: bold;
 
 .license-title{
   font-family: 'Tajawal';
-  background: linear-gradient(to right, #667EEA 0%, #764BA2 100%);
+  background: linear-gradient(70.91deg, #764BA2 0%, #667EEA 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
- font-weight: 700;
- font-size: 43px;
- text-align: center;
-}
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(102, 51, 127, 0.2);
+ }
 
 .license-col{
   /* width:336px; */
   height:515px;
-  background: linear-gradient(to right, #764BA2 0%, #667EEA 100%);
+  background: linear-gradient(70.91deg, #764BA2 0%, #667EEA 100%);
   border-radius: 25px;
   margin-top: 10px;
 }
@@ -285,6 +327,7 @@ font-weight: bold;
 .license-li::before {
   /* content: "•";  */
   color: #764BA2;
+  
   display: inline-block;
   width: 1em;
   margin-right: -1em; 
@@ -298,17 +341,16 @@ font-weight: bold;
   border-radius: 18px;
   /* position: relative;
   right: 28px; */
+  font-style: normal;
+  color: #5B3795;
+  font-size: 22px;
+  font-weight: 700;
 }
-
 
 /* -------------------------------package prices ------------------------- */
 .package-title-cover-ar{
-  /* background: linear-gradient(#BA77FF, #6380FF); */
-  background: linear-gradient(55deg, #FFFFFF 10.35%, rgba(255, 255, 255, 0) 41.94%), linear-gradient(56deg, #BA77FF 0%, #6380FF 100%);
+  background: linear-gradient(90deg, #FFFFFF 10.35%, rgba(255, 255, 255, 0) 41.94%), linear-gradient(70.91deg, #BA77FF 0%, #6380FF 100%);
   border: 5px solid #FFFFFF;
-  transform: matrix(1, 0, 0, 1, 0, 0);
-  /* margin-top: 70px;
-  margin-bottom: 70px; */
   width: 85%;
   margin-top: 120px;
   margin-bottom: 120px;
@@ -324,19 +366,31 @@ font-weight: bold;
   color: #FFFFFF;
   margin-right: 40px;
   padding-right: 5px;
+  text-shadow: 0px 4px 4px rgba(102, 51, 127, 0.2);
 }
 .package-title-span{
-  font-family: 'Tajawal';
-  font-style: Regular;
-  font-size: 32px;
-  margin-right: 15px;
+font-family: 'Tajawal';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+text-align: right;
+margin-right: 15px;
 }
 
 .package-cart-title{
   font-family: 'Tajawal';
-  font-weight: bold;
-  font-size: 32px;
-  text-align: center;
+font-style: normal;
+text-align: center;
+font-weight: 700;
+font-size: 32px;
+line-height: 38px;
+/* Linear */
+background: linear-gradient(70.91deg, #764BA2 0%, #667EEA 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
 }
 .package-cart-cover{
   text-align: center;
@@ -351,18 +405,30 @@ font-weight: bold;
 
 .package-cart-text{
   font-family: 'Tajawal';
- font-weight:medium;
- font-size: 28px;
- /* line-height: 34px; */
- text-align: center;
- padding: 5px;
+  font-weight:medium;
+  font-size: 28px;
+  /* line-height: 34px; */
+  text-align: center;
+  padding: 5px;
+background: linear-gradient(70.91deg, #764BA2 0%, #667EEA 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
 
 }
 .package-cart-price{
   font-family: 'Tajawal';
-  font-weight: bold;
   font-size: 32px;
   line-height: 38px;
+  font-style: normal;
+font-weight: 700;
+
+  background: linear-gradient(70.91deg, #764BA2 0%, #667EEA 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
 }
 .package-icon-cover-ar{
     border-radius: 50%;
@@ -383,7 +449,7 @@ font-weight: bold;
 /* --------------------zedna goals------------------------------------- */
 
 .shape-img-cover{
-  margin-top: 50px;
+  margin-top: 120px;
 }
 .clearfix::after {
   content: "";
@@ -392,31 +458,33 @@ font-weight: bold;
   line-height: 0;
 }
 .zedna-goals-title{
-  font-family: 'Tajawal';
-  background: linear-gradient(to right, #667EEA 0%, #764BA2 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
- font-weight: 700;
- font-size: 63px;
- text-align: center;
+  text-align: center;
+ font-family: 'Tajawal';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 77px;
+/* identical to box height */
+letter-spacing: 0.01em;
+ color: #5B3795;
+text-shadow: 0px 4px 4px rgba(102, 51, 127, 0.2);
 }
 .zedna-goals-title-text{
   margin-top: 30px;
   margin-bottom: 70px;
 }
-
 .zedna-goals-header-text{
   font-family: 'Tajawal';
-  font-weight: 400;
-  font-size: 24px;
-  text-align: center;
+font-style: normal;
+font-weight: 300;
+font-size: 32px;
+line-height: 38px;
+text-align: center;
+letter-spacing: 0.01em;
+color: #764BA2;
 }
 .zedna-goals-col{
   text-align: center;
-  
-}
-.zedna-goals-img{
- 
 }
 
 .zedna-goals-text{
@@ -427,6 +495,8 @@ font-weight: bold;
   letter-spacing: 1%;
   text-align: center;
   padding: 30px;
+
+  
 }
 .zedna-text-span{
   font-weight: bold;
@@ -438,6 +508,9 @@ font-weight: bold;
   background: #5B3795;
   /* height: 292px;  */
 }
+.foter-padding{
+  margin-top: 10px;
+}
 .footer-img{
   position: relative;
   top: 53px;
@@ -448,40 +521,59 @@ font-weight: bold;
 .footer-second-layer {
   padding-top: 66px;
 }
-.footer-second-layer-text{
-font-family: 'Lato', sans-serif;
+.footer-second-layer-text p{
+  font-family: 'Lato';
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 22px;
+text-align: right;
 letter-spacing: 0.01em;
 color: #FFFFFF;
-text-align: right;
 }
 .footer-second-layer-ul{
   list-style-type: none; 
 }
 .footer-second-layer-ul li a{
-  font-family: 'Lato', sans-serif;
-  font-style: medium;
-  font-size: 18px;
-  line-height: 31px;
-  color: #FFFFFF;
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 31px;
+text-align: right;
+letter-spacing: 0.01em;
+
+color: #FFFFFF;
 }
 
 .footer-ul-title{
-  font-family: 'Lato', sans-serif;
-  font-style: SemiBold;
-  font-size: 21px;
-  line-height: 25px;
-  color: #FFFFFF;
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+/* line-height: 25px; */
+text-align: right;
+letter-spacing: 0.01em;
+color: #FFFFFF;
+
+border-bottom: 3px solid #F57335;
+width: 86px;
 }
+
 .footer-third-layer{
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 12px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.footer-third-layer p{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+letter-spacing: 0.01em;
+color: #FFFFFF;
+
 }
 .footer-icons{
   gap: 30px;
@@ -493,7 +585,23 @@ text-align: right;
   color: #ffff;
 }
 
+.shape-img-cover-pages{
+margin-top: 180px;
+position: relative; 
+} 
 
+.backtric-cover{
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-right: 35px;
+  gap: 10px;
+  align-items: center;
+  line-height: 26px;
+}
+.backtric-img-cover{
+  padding-right: 35px;
+}
 
 /* 
 --------------------------signin page----------------------------------------- */
@@ -554,6 +662,18 @@ input::placeholder {
   /* height: 38px; */
   font-size: 20px;
 }
+
+.single-button-ar{ 
+  background: linear-gradient(70.91deg, #BA77FF 0%, #6380FF 100%);
+  box-shadow: 0px 4px 4px rgba(14, 53, 191, 0.25);
+  border-radius: 12px;
+  /* width: 40%; */
+  color: #ffff;
+  /* height: 38px; */
+  font-size: 20px;
+}
+
+
 .single-button-outline{
   box-shadow: 0px 4px 4px rgba(14, 53, 191, 0.25);
   border-radius: 12px;
@@ -565,11 +685,11 @@ input::placeholder {
 }
 
 /* --------------------------------enter otp ------------------------------ */
-.otp-text p {
+.otp-text-ar p {
   font-family: 'Tajawal';
 font-style: normal;
-font-weight: 700;
-font-size: 20px;
+font-weight: 400;
+font-size: 15px;
 line-height: 24px;
 
 color:#828282;
@@ -581,15 +701,13 @@ color:#828282;
   border-radius: 12px;
   width: 60%;
   color: #ffff;
-  /* height: 38px; */
   font-size: 20px;
 }
-.single-otp-button-outline{
+.single-otp-button-outline-ar{
   box-shadow: 0px 4px 4px rgba(14, 53, 191, 0.25);
   border-radius: 12px;
-  width: 30%;
+  /* width: 30%; */
   color: #6380FF;
-  /* height: 38px; */
   font-size: 20px;
   font-weight: bold;
 }
@@ -611,3 +729,126 @@ color:#828282;
   line-height: 17px;
   color: #828282;
 } 
+
+/* ---------------------------payment page------------------------- */
+
+.backtric-cover-payment{
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  /* padding-right: 35px; */
+  gap: 10px;
+  align-items: center;
+  line-height: 26px;
+}
+/* .backtric-img-cover-payment{
+  padding-right: 35px;
+} */
+
+.payment-info-text{
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.payment-info-text-p{
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+.cards-cover{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+  background: #C8B6DE;
+  border-radius: 8px;
+}
+.payment-card-p{
+  color: #FFFFFF; 
+  padding-top:5px;
+}
+.payment-span{
+font-family: 'Tajawal';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #2F80ED;
+margin-left:10px;
+}
+
+.review-cover{
+ display: flex;
+  justify-content: space-between;
+  flex-direction: row; 
+   border-bottom:1px solid #E0E0E0;
+   margin-top: 30px;
+}
+
+.review-p{
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.review-p-price{
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.review-total-p{
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #000000;             
+}
+.review-gst-p{
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #828282;
+}
+
+.review-total-price{
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000; 
+}
+.review-total-price-span{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #828282;
+  margin-right:10px;
+}
