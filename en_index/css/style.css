@@ -30,16 +30,6 @@ ul {
   padding: 0;
 }
 
-.input::placeholder {
-  font-family: 'Tajawal';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #828282 !important;
-  opacity: 1;
-  }
-
 .img {
   width: 100%;
   display: block;
@@ -593,14 +583,18 @@ text-align: left;
   list-style-type: none; 
 }
 .footer-second-layer-ul li a{
+
+
   font-family: 'Lato';
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
 line-height: 31px;
 letter-spacing: 0.01em;
+
 color: #FFFFFF;
 }
+
 .footer-ul-title{
   font-family: 'Lato';
 font-style: normal;
@@ -613,6 +607,8 @@ color: #FFFFFF;
 border-bottom: 3px solid #F57335;
 width: 86px; 
 }
+
+
 .footer-third-layer{
   font-family: 'Lato';
 font-style: normal;
